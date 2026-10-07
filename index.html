@@ -1,11 +1,347 @@
-<!DOCTYPE  html>
-<html>
-  <head>
-   <title>MattNu Express LLC</title>
-   </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <body>
-    <h1>MattNu Express LLC</h1>
-  <p>Welcome to our website!</p>
-  </body>
+<title>MattNu Express LLC</title>
+
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+scroll-behavior: smooth;
+}
+
+body {
+font-family: Arial, sans-serif;
+color: #163f3f;
+background: #ffffff;
+line-height: 1.6;
+}
+
+/* NAVIGATION */
+nav {
+background: #0f5c5c;
+padding: 18px 8%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: sticky;
+top: 0;
+z-index: 1000;
+}
+
+.logo {
+color: #d4af37;
+font-size: 24px;
+font-weight: bold;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+margin-left: 25px;
+font-weight: bold;
+}
+
+nav a:hover {
+color: #d4af37;
+}
+
+/* HERO */
+.hero {
+min-height: 85vh;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+padding: 60px 20px;
+background: linear-gradient(135deg, #0f5c5c, #174747);
+color: white;
+}
+
+.hero h1 {
+font-size: 56px;
+margin-bottom: 15px;
+}
+
+.hero span {
+color: #d4af37;
+}
+
+.hero p {
+font-size: 21px;
+max-width: 700px;
+margin: 0 auto 30px;
+}
+
+.button {
+display: inline-block;
+background: #d4af37;
+color: #173f3f;
+padding: 14px 28px;
+border-radius: 6px;
+text-decoration: none;
+font-weight: bold;
+}
+
+.button:hover {
+background: #f0cf55;
+}
+
+/* SECTIONS */
+section {
+padding: 80px 10%;
+}
+
+section h2 {
+text-align: center;
+font-size: 36px;
+margin-bottom: 25px;
+color: #0f5c5c;
+}
+
+.section-text {
+max-width: 800px;
+margin: auto;
+text-align: center;
+font-size: 18px;
+}
+
+/* SERVICES */
+.services {
+background: #f5f8f7;
+}
+
+.service-container {
+display: flex;
+justify-content: center;
+gap: 25px;
+flex-wrap: wrap;
+margin-top: 40px;
+}
+
+.service-card {
+background: white;
+padding: 30px;
+width: 280px;
+border-radius: 10px;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+text-align: center;
+}
+
+.service-card h3 {
+color: #0f5c5c;
+margin-bottom: 10px;
+}
+
+/* WHY US */
+.why-us {
+display: flex;
+justify-content: center;
+gap: 30px;
+flex-wrap: wrap;
+margin-top: 40px;
+}
+
+.why-card {
+width: 220px;
+text-align: center;
+}
+
+.why-card h3 {
+color: #d4af37;
+margin-bottom: 8px;
+}
+
+/* CONTACT */
+.contact {
+background: #0f5c5c;
+color: white;
+text-align: center;
+}
+
+.contact h2 {
+color: #d4af37;
+}
+
+.contact a {
+color: white;
+}
+
+.contact-info {
+margin-top: 25px;
+font-size: 19px;
+}
+
+/* FOOTER */
+footer {
+background: #083c3c;
+color: white;
+text-align: center;
+padding: 20px;
+font-size: 14px;
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+nav {
+flex-direction: column;
+gap: 10px;
+}
+
+nav a {
+margin-left: 10px;
+margin-right: 10px;
+}
+
+.hero h1 {
+font-size: 40px;
+}
+
+section {
+padding: 60px 7%;
+}
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+<div class="logo">MattNu Express</div>
+
+<div>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#why-us">Why Us</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+
+<!-- HOME -->
+<section class="hero" id="home">
+<div>
+<h1>MattNu <span>Express</span></h1>
+
+<p>
+Reliable service. Professional solutions.
+Built around your needs.
+</p>
+
+<a href="#contact" class="button">Request a Quote</a>
+</div>
+</section>
+
+
+<!-- ABOUT -->
+<section id="about">
+<h2>About MattNu Express</h2>
+
+<p class="section-text">
+MattNu Express LLC is committed to providing dependable,
+professional service while putting our customers first.
+We believe in clear communication, reliability, and
+creating solutions that work for every customer.
+</p>
+</section>
+
+
+<!-- SERVICES -->
+<section class="services" id="services">
+<h2>Our Services</h2>
+
+<p class="section-text">
+Learn more about the services offered by MattNu Express LLC.
+</p>
+
+<div class="service-container">
+
+<div class="service-card">
+<h3>Service One</h3>
+<p>
+Add a description of your first service here.
+</p>
+</div>
+
+<div class="service-card">
+<h3>Service Two</h3>
+<p>
+Add a description of your second service here.
+</p>
+</div>
+
+<div class="service-card">
+<h3>Service Three</h3>
+<p>
+Add a description of your third service here.
+</p>
+</div>
+
+</div>
+</section>
+
+
+<!-- WHY US -->
+<section id="why-us">
+<h2>Why Choose MattNu Express?</h2>
+
+<div class="why-us">
+
+<div class="why-card">
+<h3>Reliable</h3>
+<p>We value consistency and dependable service.</p>
+</div>
+
+<div class="why-card">
+<h3>Professional</h3>
+<p>We take pride in providing professional customer service.</p>
+</div>
+
+<div class="why-card">
+<h3>Customer Focused</h3>
+<p>Your needs are at the center of what we do.</p>
+</div>
+
+<div class="why-card">
+<h3>Flexible</h3>
+<p>We work to find solutions that fit your needs.</p>
+</div>
+
+</div>
+</section>
+
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+<h2>Contact MattNu Express</h2>
+
+<p>
+Ready to get started? We'd love to hear from you.
+</p>
+
+<div class="contact-info">
+<p>📞 <a href="tel:3463327059">346-332-7059</a></p>
+
+<p>
+✉️
+<a href="mailto:info@mattnuexpress.com">
+info@mattnuexpress.com
+</a>
+</p>
+</div>
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+© 2026 MattNu Express LLC. All rights reserved.
+</footer>
+
+</body>
 </html>
