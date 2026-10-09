@@ -236,31 +236,20 @@ color: var(--white);
 .hero {
 position: relative;
 overflow: hidden;
-padding: 112px 0 120px;
-color: var(--white);
+padding: 125px 0 135px;
+color: #ffffff;
+
 background:
-radial-gradient(
-circle at 85% 20%,
-rgba(212, 175, 55, 0.19),
-transparent 28%
+linear-gradient(
+90deg,
+rgba(5, 43, 43, 0.88) 0%,
+rgba(5, 43, 43, 0.70) 55%,
+rgba(5, 43, 43, 0.25) 100%
 ),
-linear-gradient(125deg, #082f30 0%, #0b4141 55%, #176363 100%);
+url("hummingbirds.jpg") center 45% / cover no-repeat;
 }
 
-.hero::after {
-content: "";
-position: absolute;
-width: 430px;
-height: 430px;
-right: -120px;
-bottom: -250px;
-border: 1px solid rgba(242, 223, 160, 0.28);
-border-radius: 50%;
-box-shadow:
-0 0 0 35px rgba(242, 223, 160, 0.035),
-0 0 0 75px rgba(242, 223, 160, 0.025);
-pointer-events: none;
-}
+
 
 .hero-content {
 position: relative;
